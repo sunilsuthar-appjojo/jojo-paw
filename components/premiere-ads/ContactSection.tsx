@@ -50,26 +50,32 @@ export default function ContactSection({ data }: ContactSectionProps) {
   };
 
   return (
-    <section id="contact" className="bg-[#F5F5F5] py-16 lg:py-24">
+    <section id="contact" className=" py-16 lg:py-24">
       <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12">
-        {/* Header */}
-        <div className="mb-12 lg:mb-16">
-          <h2 className="font-gotham font-bold text-[36px] sm:text-[48px] lg:text-[56px] leading-[100%] tracking-tight text-[#0A0A0A] uppercase mb-4">
+        {/* Header with vertical line separator */}
+        <div className="mb-12 lg:mb-16 flex items-center gap-6">
+          <h2 className="font-gotham font-bold text-[36px] sm:text-[48px] lg:text-[56px] leading-[100%] tracking-tight text-textPrimary uppercase whitespace-nowrap">
             {data.title}
           </h2>
-          <p className="font-poppins text-[16px] sm:text-[18px] leading-[150%] text-[#4A4A4A]">
+          <div className="hidden sm:block w-[3px] h-[50px] lg:h-[60px] bg-textPrimary flex-shrink-0"></div>
+          <p className="hidden sm:block font-poppins text-[16px] sm:text-[18px] leading-[150%] text-textPrimary/70">
             {data.description}
           </p>
         </div>
+        
+        {/* Mobile description (below title) */}
+        <p className="sm:hidden font-poppins text-[16px] leading-[150%] text-textPrimary/70 mb-12">
+          {data.description}
+        </p>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 lg:gap-6 items-center bg-bgLight rounded-xl py-2 pl-15">
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6 p-10">
             {data.form.fields.map((field) => (
               <div key={field.name}>
                 <label
                   htmlFor={field.name}
-                  className="block font-poppins text-[14px] font-medium text-[#0A0A0A] mb-2"
+                  className="block font-poppins text-[14px] font-medium text-textPrimary mb-2"
                 >
                   {field.label}
                 </label>
@@ -82,7 +88,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                     value={formData[field.name] || ""}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 bg-white border border-[#E0E0E0] rounded-lg font-poppins text-[16px] text-[#0A0A0A] placeholder:text-[#BDBDBD] focus:outline-none focus:ring-2 focus:ring-[#E63946] focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-background border border-bgLight rounded-lg font-poppins text-[16px] text-textPrimary placeholder:text-textPrimary/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                   />
                 ) : (
                   <input
@@ -93,7 +99,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                     required={field.required}
                     value={formData[field.name] || ""}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border border-[#E0E0E0] rounded-lg font-poppins text-[16px] text-[#0A0A0A] placeholder:text-[#BDBDBD] focus:outline-none focus:ring-2 focus:ring-[#E63946] focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-background border border-bgLight rounded-lg font-poppins text-[16px] text-textPrimary placeholder:text-textPrimary/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                   />
                 )}
               </div>
@@ -102,14 +108,14 @@ export default function ContactSection({ data }: ContactSectionProps) {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-[#0A0A0A] text-white font-gotham font-bold text-[16px] sm:text-[18px] px-8 py-4 rounded-lg hover:bg-[#2A2A2A] disabled:bg-[#BDBDBD] disabled:cursor-not-allowed transition-colors uppercase"
+              className="w-full bg-bgBlack text-background font-gotham font-bold text-[16px] sm:text-[18px] px-8 py-4 rounded-lg hover:bg-bgBlack/90 disabled:bg-textPrimary/40 disabled:cursor-not-allowed transition-colors uppercase"
             >
               {isSubmitting ? "Sending..." : data.form.submitButton}
             </button>
           </form>
 
           {/* Illustration */}
-          <div className="relative h-[400px] lg:h-[500px]">
+          <div className="relative h-[400px] lg:h-[500px] left-19">
             <Image
               src={data.illustration}
               alt="Contact illustration"

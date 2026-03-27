@@ -54,10 +54,10 @@ const SocialIcon = ({ icon }: { icon: string }) => {
   return (
     <Link
       href="#"
-      className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:opacity-80 transition-opacity"
+      className="w-10 h-10 rounded-full bg-background flex items-center justify-center hover:opacity-80 transition-opacity"
       aria-label={icon}
     >
-      <span className="text-[#0A0F15]">
+      <span className="text-textPrimary">
         {iconComponents[icon] || iconComponents.instagram}
       </span>
     </Link>
@@ -74,16 +74,16 @@ const AccordionSection = ({
   onToggle: () => void;
 }) => {
   return (
-    <div className="border-b border-[#BDBDBD]/20">
+    <div className="border-b border-textPrimary/20">
       <button
         onClick={onToggle}
         className="w-full flex items-center justify-between py-4 text-left"
       >
-        <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase text-white">
+        <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase text-textPrimary">
           {section.title}
         </h3>
         <svg
-          className={`w-5 h-5 text-[#BDBDBD] transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+          className={`w-5 h-5 text-bgGray transition-transform duration-300 ${isOpen ? "rotate-180" : ""
             }`}
           fill="none"
           viewBox="0 0 24 24"
@@ -103,7 +103,7 @@ const AccordionSection = ({
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#BDBDBD] hover:text-white transition-colors"
+                className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-bgGray hover:text-textPrimary transition-colors"
               >
                 {link.label}
               </Link>
@@ -115,7 +115,7 @@ const AccordionSection = ({
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#BDBDBD] hover:text-white transition-colors"
+                  className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-bgGray hover:text-textPrimary transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -153,9 +153,8 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
   };
 
   return (
-    <footer className="text-[#767676] bg-[#FAFAFA]">
+    <footer className="bg-bgSoft">
       <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 py-8 lg:py-10">
-        {/* Desktop Layout - Horizontal */}
         <div className="hidden lg:flex lg:items-start lg:justify-between lg:gap-12 mb-8 lg:mb-10">
           {/* Logo */}
           {data.logo && (
@@ -171,7 +170,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
                     style={{ maxWidth: data.logo.width || 160, maxHeight: data.logo.height || 48 }}
                   />
                 ) : (
-                  <div className="text-[#BDBDBD]">
+                  <div className="text-textPrimary">
                     <div className="font-gotham text-[20px] font-bold">JOJO</div>
                     <div className="font-poppins text-[16px] font-normal">LIMITED</div>
                   </div>
@@ -185,7 +184,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
             {data.sections.map((section: any, idx: any) => (
               <div key={idx} className="flex-shrink-0">
                 {section.title && (
-                  <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase mb-7 text-[#0A0A0A]">
+                  <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase mb-7 text-textPrimary">
                     {section.title}
                   </h3>
                 )}
@@ -195,7 +194,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
                       <Link
                         key={link.href}
                         href={link.href}
-                        className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#BDBDBD] hover:text-white transition-colors whitespace-nowrap"
+                        className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-bgGray hover:text-textPrimary transition-colors whitespace-nowrap"
                       >
                         {link.label}
                       </Link>
@@ -207,7 +206,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#BDBDBD] hover:text-white transition-colors whitespace-nowrap"
+                          className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-bgGray hover:text-textPrimary transition-colors whitespace-nowrap"
                         >
                           {link.label}
                         </Link>
@@ -220,7 +219,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
             {/* Socials */}
             {data.socials && (
               <div className="flex-shrink-0">
-                <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase mb-7 text-[#0A0A0A]">
+                <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase mb-7 text-textPrimary">
                   {data.socials.title}
                 </h3>
                 <div className="flex gap-2.5 flex-wrap">
@@ -249,7 +248,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
                     style={{ maxWidth: data.logo.width || 160, maxHeight: data.logo.height || 48 }}
                   />
                 ) : (
-                  <div className="text-[#BDBDBD]">
+                  <div className="text-textPrimary">
                     <div className="font-gotham text-[20px] font-bold">JOJO</div>
                     <div className="font-poppins text-[16px] font-normal">LIMITED</div>
                   </div>
@@ -271,16 +270,16 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
 
             {/* Socials Accordion */}
             {data.socials && (
-              <div className="border-b border-[#BDBDBD]/20">
+              <div className="border-b border-textPrimary/20">
                 <button
                   onClick={() => toggleSection(999)}
                   className="w-full flex items-center justify-between py-4 text-left"
                 >
-                  <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase text-white">
+                  <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase text-textPrimary">
                     {data.socials.title}
                   </h3>
                   <svg
-                    className={`w-5 h-5 text-[#BDBDBD] transition-transform duration-300 ${openSections.includes(999) ? "rotate-180" : ""
+                    className={`w-5 h-5 text-bgGray transition-transform duration-300 ${openSections.includes(999) ? "rotate-180" : ""
                       }`}
                     fill="none"
                     viewBox="0 0 24 24"
@@ -306,15 +305,15 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#0A0A0A] pt-4 lg:pt-5 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-          <p className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#0A0A0A]">{data.copyright}</p>
+        <div className="border-t border-textPrimary pt-4 lg:pt-5 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+          <p className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-textPrimary">{data.copyright}</p>
           {data.bottomLinks && (
             <div className="flex gap-4 sm:gap-8">
               {data.bottomLinks.map((link: any) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#0A0A0A] hover:text-white transition-colors"
+                  className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-textPrimary hover:text-textPrimary/70 transition-colors"
                 >
                   {link.label}
                 </Link>

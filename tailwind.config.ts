@@ -19,7 +19,8 @@ const config: Config = {
         bgLight: "#F5F5F5",
         bgSoft: "#FAFAFA",
         bgBlack:"#0A0A0A",
-        bgSilver:"#F5F5F5"
+        bgSilver:"#F5F5F5",
+        bgGray:"#767676"
       },
       fontSize: {
         // TITLE SCALE
