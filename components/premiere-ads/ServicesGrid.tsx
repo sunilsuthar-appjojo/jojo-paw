@@ -22,9 +22,9 @@ interface ServicesGridProps {
 
 const themeStyles = {
   light: {
-    bg: "bg-[#F5F5F5]",
-    text: "text-[#0A0A0A]",
-    desc: "text-[#0A0A0A]/70",
+    bg: "bg-bgLight",
+    text: "text-textPrimary",
+    desc: "text-textPrimary/70",
     border: "border-black",
   },
   red: {
