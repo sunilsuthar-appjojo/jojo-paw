@@ -153,7 +153,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
   };
 
   return (
-    <footer className="text-[#BDBDBD] bg-[#0A0F15]">
+    <footer className="text-[#767676] bg-[#FAFAFA]">
       <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 py-8 lg:py-10">
         {/* Desktop Layout - Horizontal */}
         <div className="hidden lg:flex lg:items-start lg:justify-between lg:gap-12 mb-8 lg:mb-10">
@@ -185,7 +185,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
             {data.sections.map((section: any, idx: any) => (
               <div key={idx} className="flex-shrink-0">
                 {section.title && (
-                  <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase mb-7 text-white">
+                  <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase mb-7 text-[#0A0A0A]">
                     {section.title}
                   </h3>
                 )}
@@ -220,7 +220,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
             {/* Socials */}
             {data.socials && (
               <div className="flex-shrink-0">
-                <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase mb-7 text-white">
+                <h3 className="font-gotham font-bold text-[20px] leading-[100%] tracking-[0%] uppercase mb-7 text-[#0A0A0A]">
                   {data.socials.title}
                 </h3>
                 <div className="flex gap-2.5 flex-wrap">
@@ -306,15 +306,15 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#BDBDBD]/30 pt-4 lg:pt-5 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-          <p className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#BDBDBD]">{data.copyright}</p>
+        <div className="border-t border-[#0A0A0A] pt-4 lg:pt-5 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+          <p className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#0A0A0A]">{data.copyright}</p>
           {data.bottomLinks && (
             <div className="flex gap-4 sm:gap-8">
               {data.bottomLinks.map((link: any) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#BDBDBD] hover:text-white transition-colors"
+                  className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-[#0A0A0A] hover:text-white transition-colors"
                 >
                   {link.label}
                 </Link>
