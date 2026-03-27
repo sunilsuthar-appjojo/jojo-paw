@@ -154,7 +154,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
 
   return (
     <footer className="bg-bgSoft">
-      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 py-8 lg:py-10">
+      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 py-6 sm:py-8 lg:py-10">
         <div className="hidden lg:flex lg:items-start lg:justify-between lg:gap-12 mb-8 lg:mb-10">
           {/* Logo */}
           {data.logo && (
@@ -233,7 +233,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
         </div>
 
         {/* Mobile Layout - Accordion */}
-        <div className="lg:hidden mb-8">
+        <div className="lg:hidden mb-6 sm:mb-8">
           {/* Logo */}
           {data.logo && (
             <div className="flex-shrink-0 mb-6">
@@ -242,15 +242,15 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
                   <Image
                     src={data.logo.image}
                     alt={data.logo.alt}
-                    width={data.logo.width || 160}
-                    height={data.logo.height || 48}
+                    width={data.logo.width || 140}
+                    height={data.logo.height || 42}
                     className="w-auto h-auto"
-                    style={{ maxWidth: data.logo.width || 160, maxHeight: data.logo.height || 48 }}
+                    style={{ maxWidth: data.logo.width || 140, maxHeight: data.logo.height || 42 }}
                   />
                 ) : (
                   <div className="text-textPrimary">
-                    <div className="font-gotham text-[20px] font-bold">JOJO</div>
-                    <div className="font-poppins text-[16px] font-normal">LIMITED</div>
+                    <div className="font-gotham text-[18px] font-bold">JOJO</div>
+                    <div className="font-poppins text-[14px] font-normal">LIMITED</div>
                   </div>
                 )}
               </Link>
@@ -258,7 +258,7 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
           )}
 
           {/* Accordion Sections */}
-          <div className="w-full">
+          <div className="w-full border-t border-textPrimary/10">
             {data.sections.map((section: any, idx: any) => (
               <AccordionSection
                 key={idx}
@@ -305,15 +305,15 @@ export default function Footer({ data, bgColor = "#0A0F15" }: FooterProps) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-textPrimary pt-4 lg:pt-5 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-          <p className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-textPrimary">{data.copyright}</p>
+        <div className="border-t-0 sm:border-t border-textPrimary/20 pt-4 lg:pt-5 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-center sm:text-left">
+          <p className="font-poppins text-[13px] sm:text-[14px] lg:text-[16px] font-normal leading-[100%] tracking-[0%] text-textPrimary">{data.copyright}</p>
           {data.bottomLinks && (
-            <div className="flex gap-4 sm:gap-8">
+            <div className="flex gap-3 sm:gap-4 lg:gap-8">
               {data.bottomLinks.map((link: any) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-poppins text-[16px] font-normal leading-[100%] tracking-[0%] text-textPrimary hover:text-textPrimary/70 transition-colors"
+                  className="font-poppins text-[13px] sm:text-[14px] lg:text-[16px] font-normal leading-[100%] tracking-[0%] text-textPrimary hover:text-textPrimary/70 transition-colors"
                 >
                   {link.label}
                 </Link>
