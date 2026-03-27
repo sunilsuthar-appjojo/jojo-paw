@@ -23,7 +23,7 @@ interface HeroSectionProps {
 export default function HeroSection({ data }: HeroSectionProps) {
   return (
     <section className="relative bg-[#E63946] overflow-hidden">
-      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 py-16 lg:py-24">
+      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 pt-16 lg:pt-24">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="relative z-10 space-y-6 lg:space-y-8">
