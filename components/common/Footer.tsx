@@ -54,10 +54,10 @@ const SocialIcon = ({ icon }: { icon: string }) => {
   return (
     <Link
       href="#"
-      className="w-10 h-10 rounded-full bg-background flex items-center justify-center hover:opacity-80 transition-opacity"
+      className="w-10 h-10 rounded-full bg-bgBlack flex items-center justify-center hover:opacity-80 transition-opacity"
       aria-label={icon}
     >
-      <span className="text-textPrimary">
+      <span className="text-background">
         {iconComponents[icon] || iconComponents.instagram}
       </span>
     </Link>
