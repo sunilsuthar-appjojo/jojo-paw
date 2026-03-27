@@ -88,7 +88,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                         value={formData[field.name] || ""}
                         onChange={handleChange}
                         rows={4}
-                        className="w-full px-3 py-2.5 sm:px-4 sm:py-3 bg-background border border-textPrimary/20 rounded-lg font-poppins text-[14px] sm:text-[16px] text-textPrimary placeholder:text-textPrimary/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                        className="w-full px-3 py-2.5 sm:px-4 sm:py-3 bg-background border border-textPrimary/20 rounded-lg font-poppins text-[14px] sm:text-[16px] text-textPrimary placeholder:text-textPrimary/40 focus:outline-none focus:ring-2 focus:ring-bgGray focus:border-transparent transition-all"
                       />
                     ) : (
                       <input
@@ -99,7 +99,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                         required={field.required}
                         value={formData[field.name] || ""}
                         onChange={handleChange}
-                        className="w-full px-3 py-2.5 sm:px-4 sm:py-3 bg-background border border-textPrimary/20 rounded-lg font-poppins text-[14px] sm:text-[16px] text-textPrimary placeholder:text-textPrimary/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                        className="w-full px-3 py-2.5 sm:px-4 sm:py-3 bg-background border border-textPrimary/20 rounded-lg font-poppins text-[14px] sm:text-[16px] text-textPrimary placeholder:text-textPrimary/40 focus:outline-none focus:ring-2 focus:ring-bgGray focus:border-transparent transition-all"
                       />
                     )}
                   </div>
