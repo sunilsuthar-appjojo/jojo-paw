@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "logo": {
+      "text": "PREMIERE",
+      "subtitle": "ADS WORLD"
+    },
+    "description": "Premiere Ads World is your trusted advertising partner, transforming brands with creative campaigns and strategic insights. We deliver impactful solutions that connect with audiences and elevate your business.",
+    "ctaButton": {
+      "text": "Contact Us",
+      "href": "#contact"
+    },
+    "backgroundArrows": "/images/svg/banner-arrow.svg"
+  },
+  "whatWeDo": {
+    "title": "WHAT WE DO",
+    "description": "We specialize in creating cutting-edge campaigns that help businesses grow and reach their target audience.",
+    "services": [
+      {
+        "id": "digital-marketing",
+        "title": "DIGITAL MARKETING",
+        "description": "Elevating your brand through data-driven digital strategies across multiple platforms.",
+        "icon": "/images/svg/DIGITAL_MARKETING.svg",
+        "theme": "light"
+      },
+      {
+        "id": "influencer-marketing",
+        "title": "INFLUENCER MARKETING",
+        "description": "Connecting your brand with influential voices to amplify your message and reach.",
+        "icon": "/images/svg/INFLUENCER_MARKETING.svg",
+        "theme": "red"
+      },
+      {
+        "id": "brand-partnerships",
+        "title": "BRAND PARTNERSHIPS",
+        "description": "Strategic collaborations that create mutually beneficial brand alliances.",
+        "icon": "/images/svg/BRAND_PARTNERSHIP.svg",
+        "theme": "black"
+      },
+      {
+        "id": "content-integration",
+        "title": "CONTENT & INTEGRATIONS",
+        "description": "Seamless content and product placements that resonate with audiences.",
+        "icon": "/images/svg/CONTENT_INTEGRATION.svg",
+        "theme": "light"
+      },
+      {
+        "id": "on-ground",
+        "title": "ON-GROUND ACTIVATIONS",
+        "description": "Immersive experiential events that bring your brand to life.",
+        "icon": "/images/svg/ON_GROUND.svg",
+        "theme": "red"
+      },
+      {
+        "id": "campaign-strategy",
+        "title": "CAMPAIGN STRATEGY",
+        "description": "Strategic planning and execution that delivers measurable results and ROI.",
+        "icon": "/images/svg/CAMPAIGN.svg",
+        "theme": "black"
+      }
+    ]
+  },
+  "contact": {
+    "title": "CONTACT US",
+    "description": "Connect with us to discuss how we can elevate your brand.",
+    "illustration": "/images/svg/Illustration_FORM.svg",
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "placeholder": "Your name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "placeholder": "your.email@example.com",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "placeholder": "Tell us about your project...",
+          "required": true
+        }
+      ],
+      "submitButton": "Send Message"
+    }
+  }
+}
