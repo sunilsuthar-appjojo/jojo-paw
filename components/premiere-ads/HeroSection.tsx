@@ -22,30 +22,30 @@ interface HeroSectionProps {
 
 export default function HeroSection({ data }: HeroSectionProps) {
   return (
-    <section className="relative bg-[#E63946] overflow-hidden">
+    <section className="relative bg-primary overflow-hidden">
       <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 pt-16 lg:pt-24">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="relative z-10 space-y-6 lg:space-y-8">
             {/* Logo */}
             <div className="space-y-1">
-              <h1 className="font-gotham font-bold text-[48px] sm:text-[64px] lg:text-[80px] leading-[90%] tracking-tight text-white uppercase">
+              <h1 className="font-gotham font-bold text-[48px] sm:text-[64px] lg:text-[80px] leading-[90%] tracking-tight text-background uppercase">
                 {data.logo.text}
               </h1>
-              <p className="font-gotham font-bold text-[20px] sm:text-[24px] lg:text-[28px] leading-[100%] text-white uppercase">
+              <p className="font-gotham font-bold text-[20px] sm:text-[24px] lg:text-[28px] leading-[100%] text-background uppercase">
                 {data.logo.subtitle}
               </p>
             </div>
 
             {/* Description */}
-            <p className="font-poppins text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] text-white/90 max-w-[500px]">
+            <p className="font-poppins text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] text-background/90 max-w-[500px]">
               {data.description}
             </p>
 
             {/* CTA Button */}
             <Link
               href={data.ctaButton.href}
-              className="inline-block bg-white text-[#E63946] font-gotham font-bold text-[16px] sm:text-[18px] px-8 py-3 rounded-md hover:bg-white/90 transition-colors uppercase"
+              className="inline-block bg-background text-primary font-gotham font-bold text-[16px] sm:text-[18px] px-8 py-3 rounded-md hover:bg-background/90 transition-colors uppercase"
             >
               {data.ctaButton.text}
             </Link>
