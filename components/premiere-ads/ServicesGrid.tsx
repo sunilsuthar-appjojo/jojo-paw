@@ -48,11 +48,11 @@ export default function ServicesGrid({ data }: ServicesGridProps) {
 
         {/* Header */}
         <div className="mb-14 lg:mb-20">
-          <h2 className="font-heading font-bold text-[34px] sm:text-[48px] lg:text-[56px] leading-[100%] tracking-tight text-textPrimary uppercase mb-6">
+          <h2 className="font-gotham font-bold text-[34px] sm:text-[48px] lg:text-[56px] leading-[100%] tracking-tight text-textPrimary uppercase mb-6">
             {data.title}
           </h2>
 
-          <p className="font-body text-[15px] sm:text-[17px] leading-[150%] text-textPrimary/70 max-w-[700px]">
+          <p className="font-poppins text-[15px] sm:text-[17px] leading-[150%] text-textPrimary/70 max-w-[700px]">
             {data.description}
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function ServicesGrid({ data }: ServicesGridProps) {
               >
 
                 {/* Watermark Icon */}
-                <div className="absolute right-[-20px] bottom-[-20px] top-0 w-[220px] h-[220px] transition-all pointer-events-none">
+                <div className="absolute right-[-20px] bottom-[-20px] top-0 w-[285px] h-[255px] transition-all pointer-events-none">
                   <div className="relative w-full h-full">
                     <Image
                       src={service.icon}
@@ -100,7 +100,8 @@ export default function ServicesGrid({ data }: ServicesGridProps) {
                   <h3
                     className={`
                       font-heading 
-                      font-bold 
+                      font-bold
+                      font-gotham 
                       text-[26px] sm:text-[30px] lg:text-[32px] 
                       leading-[110%] 
                       tracking-tight 
@@ -114,9 +115,10 @@ export default function ServicesGrid({ data }: ServicesGridProps) {
                   {/* Description */}
                   <p
                     className={`
-                      font-body 
+                      font-poppins
                       text-[14px] sm:text-[15px] 
-                      leading-[150%] 
+                      leading-[150%]
+                      pt-20 
                       w-1/2
                       ${theme.desc}
                     `}
