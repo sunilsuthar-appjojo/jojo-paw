@@ -84,7 +84,7 @@ export default function ServicesGrid({ data }: ServicesGridProps) {
               >
 
                 {/* Watermark Icon */}
-                <div className="absolute right-[-20px] bottom-[-20px] w-[220px] h-[220px] opacity-[0.06] group-hover:opacity-[0.1] transition-all pointer-events-none">
+                <div className="absolute right-[-20px] bottom-[-20px] top-0 w-[220px] h-[220px] transition-all pointer-events-none">
                   <div className="relative w-full h-full">
                     <Image
                       src={service.icon}
@@ -97,8 +97,6 @@ export default function ServicesGrid({ data }: ServicesGridProps) {
 
                 {/* Content */}
                 <div className="relative z-10 space-y-6">
-
-                  {/* Title */}
                   <h3
                     className={`
                       font-heading 
@@ -119,6 +117,7 @@ export default function ServicesGrid({ data }: ServicesGridProps) {
                       font-body 
                       text-[14px] sm:text-[15px] 
                       leading-[150%] 
+                      w-1/2
                       ${theme.desc}
                     `}
                   >
