@@ -1,0 +1,70 @@
+{
+  "logo": {
+    "image": "/images/logos/JOJO_LIMITED_LOGO.svg",
+    "alt": "JOJO LIMITED Logo",
+    "width": 160,
+    "height": 48
+  },
+  "sections": [
+    {
+      "title": "COMPANY",
+      "links": [
+        { "label": "About Us", "href": "/about" },
+        { "label": "Verticals", "href": "/verticals" },
+        { "label": "Ventures", "href": "/ventures" },
+        { "label": "PR & Media", "href": "/pr-media" },
+        { "label": "Investors", "href": "/investors" },
+        {
+          "label": "Our Family",
+          "href": "/our-family"
+        },
+        { "label": "Career", "href": "/career" },
+        { "label": "Contact Us", "href": "/contact" }
+      ]
+    },
+    {
+      "title": "VERTICALS",
+      "isTwoColumn": true,
+      "links": [
+        { "label": "JOJO", "href": "/verticals/jojo" },
+        { "label": "JO", "href": "/verticals/jo" },
+        { "label": "JORDAR Tickets", "href": "/verticals/jordar-tickets" },
+        { "label": "The Super CMS", "href": "/verticals/super-cms" },
+        { "label": "JOJO TV", "href": "/verticals/jojo-tv" },
+        { "label": "JOJO Bhakti", "href": "/verticals/jojo-bhakti" },
+        { "label": "JOJO Talks", "href": "/verticals/jojo-talks" },
+        { "label": "JOJO Movies", "href": "/verticals/jojo-movies" },
+        { "label": "JOJO Shows", "href": "/verticals/jojo-shows" },
+        { "label": "JOJO Nataks", "href": "/verticals/jojo-nataks" },
+        { "label": "JOJO Kidz", "href": "/verticals/jojo-kidz" },
+        { "label": "JOJO Games", "href": "/verticals/jojo-games" },
+        { "label": "IP Asset Library", "href": "/verticals/ip-asset-library" },
+        { "label": "Mergers & Acquisitions", "href": "/verticals/mergers-acquisitions" }
+      ]
+    },
+    {
+      "title": "VENTURES",
+      "links": [
+        { "label": "JOJO Studios", "href": "/ventures/jojo-studios" },
+        { "label": "JOJO Global", "href": "/ventures/jojo-global" },
+        { "label": "Premier Ads World", "href": "/ventures/premier-ads-world" },
+        { "label": "JOJO Experience", "href": "/ventures/jojo-experience" }
+      ]
+    }
+  ],
+  "socials": {
+    "title": "SOCIALS",
+    "links": [
+      { "platform": "Instagram", "url": "https://instagram.com/jojo", "icon": "instagram" },
+      { "platform": "YouTube", "url": "https://youtube.com/jojo", "icon": "youtube" },
+      { "platform": "Facebook", "url": "https://facebook.com/jojo", "icon": "facebook" },
+      { "platform": "Twitter", "url": "https://twitter.com/jojo", "icon": "twitter" },
+      { "platform": "LinkedIn", "url": "https://linkedin.com/company/jojo", "icon": "linkedin" }
+    ]
+  },
+  "bottomLinks": [
+    { "label": "Privacy Policy", "href": "/privacy-policy" },
+    { "label": "Terms of Service", "href": "/terms-of-service" }
+  ],
+  "copyright": "© 2026 JOJO LTD. All rights reserved."
+}

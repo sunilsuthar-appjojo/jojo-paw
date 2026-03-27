@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "logo": "/images/logos/JOJO_GLOBAL_LOGO.svg",
+    "description": "JOJO Global Inc. drives the international expansion of JOJO Limited, extending its content, partnerships, and audience reach across global markets.",
+    "backgroundImage": "/images/svg/jojo-global-banner.svg"
+  },
+  "whatWeDo": {
+    "title": "WHAT WE DO",
+    "description": "Driving global growth through distribution partnerships, audience development, and market expansion.",
+    "cards": [
+      
+      {
+        "icon": "/images/svg/MARKET_PRESENCE.svg",
+        "title": "MARKET PRESENCE",
+        "description": "Establish and maintain a strong presence in key international markets."
+      },
+      
+      {
+        "icon": "/images/svg/AUDIENCE_EXPANSION.svg",
+        "title": "AUDIENCE EXPANSION",
+        "description": "Expand and diversify audience reach across multiple global markets."
+      },
+      {
+        "icon": "/images/svg/GLOBAL_PARTNERSHIPS.svg",
+        "title": "GLOBAL PARTNERSHIPS",
+        "description": "Develop and maintain key relationships with international distributors and partners."
+      },
+      {
+        "icon": "/images/svg/CONTENT_DISTRIBUTION.svg",
+        "title": "CONTENT DISTRIBUTION",
+        "description": "Deliver content to global audiences through strategic partnerships and platforms."
+      }
+    ]
+  },
+  "partnerWithUs": {
+    "title": "PARTNER WITH US",
+    "description": "Expand your content and reach new audiences through global distribution and strategic partnerships.",
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "placeholder": "Ex: Harish",
+          "required": true
+        },
+        {
+          "name": "subject",
+          "label": "Subject",
+          "type": "text",
+          "placeholder": "Explain your Belief",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "placeholder": "example@email.com",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "placeholder": "Tell us more about your inquiry...",
+          "required": true
+        },
+        {
+          "name": "phone",
+          "label": "Phone Number",
+          "type": "tel",
+          "placeholder": "+91 0000000000",
+          "required": true
+        }
+      ],
+      "submitButton": "Submit",
+      "termsText": "By clicking the checkbox you agree to all terms & conditions"
+    }
+  }
+}
