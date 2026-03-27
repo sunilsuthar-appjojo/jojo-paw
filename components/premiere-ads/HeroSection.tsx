@@ -27,25 +27,26 @@ export default function HeroSection({ data }: HeroSectionProps) {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="relative z-10 space-y-6 lg:space-y-8">
-            {/* Logo */}
-            <div className="space-y-1">
-              <h1 className="font-gotham font-bold text-[48px] sm:text-[64px] lg:text-[80px] leading-[90%] tracking-tight text-background uppercase">
-                {data.logo.text}
-              </h1>
-              <p className="font-gotham font-bold text-[20px] sm:text-[24px] lg:text-[28px] leading-[100%] text-background uppercase">
-                {data.logo.subtitle}
-              </p>
+            <div className="w-[250px] sm:w-[320px] lg:w-[350px]">
+              <Image
+                src="/images/logos/PAW-LOGO.svg"
+                alt="Premiere Ads World"
+                width={350}
+                height={100}
+                className="w-full h-auto"
+                priority
+              />
             </div>
 
             {/* Description */}
-            <p className="font-poppins text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] text-background/90 max-w-[500px]">
+            <p className="font-poppins text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] text-background max-w-[500px]">
               {data.description}
             </p>
 
             {/* CTA Button */}
             <Link
               href={data.ctaButton.href}
-              className="inline-block bg-background text-primary font-gotham font-bold text-[16px] sm:text-[18px] px-8 py-3 rounded-md hover:bg-background/90 transition-colors uppercase"
+              className="inline-block bg-background text-black font-poppins font-semibold text-[14px] sm:text-[18px] px-8 py-3 rounded-md hover:bg-background/90 transition-colors uppercase"
             >
               {data.ctaButton.text}
             </Link>
